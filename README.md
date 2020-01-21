@@ -19,7 +19,7 @@ Para utilizar :
 
 Eu utilizei o tema [Dracula](https://draculatheme.com/), a fonte [FiraCode](https://github.com/tonsky/FiraCode) e mais alguns plugins, você pode escolher o que preferir nesta lista que me ajudou muito [Awesome Hyper](https://github.com/bnb/awesome-hyper).
 
-* :camera: Screenshot do meu terminal
+ :camera: Screenshot do meu terminal
 
 ![terminal](/terminal.PNG)
 
