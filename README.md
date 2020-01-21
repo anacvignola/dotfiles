@@ -1,4 +1,4 @@
-# dotfiles
+# :computer: :gear: dotfiles 
 
 Depois que mudei do Linux(Debian) para o Windows 10, foi dificil achar um terminal bom e bonito, depois de muita pesquisa consegui editar as configurações do Git Bash e [Hyper](https://hyper.is/) e ficou quase perfeito(funciona até os comandos do linux, mas faltou a performance do teriminal do Linux em alguns comandos na minha opnião),  hoje utilizo o Hyper juntamente com o Git Bash.
 
