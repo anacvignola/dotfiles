@@ -10,13 +10,16 @@ Para utilizar :
     
     Navegue até a pasta e copie o arquivo "git-prompt.sh"
     para a pasta "C:\Program Files\Git\etc\profile.d\" e substitua o arquivo.
+    Ou você pode editar com um editor de texto como bem entender, mas tome cuidado.
     
     Altere as configurações do Hyper da forma que você achar melhor,
     ou você pode copiar as minhas é só jogar o arquivo ".hyper" 
-    em "C:\Users\SEUUSUÁRIO\AppData\Roaming\Hyper".
+    em "C:\Users\SEUUSUÁRIO\AppData\Roaming\Hyper". 
+    Ou abra o terminar Hyper vá no menu > Edit > Preferences...
 
-Eu utilizei o tema [Dracula](https://draculatheme.com/) e mais alguns plugins, você pode escolher o que preferir nesta lista que me ajudou muito [Awesome Hyper](https://github.com/bnb/awesome-hyper).
+Eu utilizei o tema [Dracula](https://draculatheme.com/), a fonte [FiraCode](https://github.com/tonsky/FiraCode) e mais alguns plugins, você pode escolher o que preferir nesta lista que me ajudou muito [Awesome Hyper](https://github.com/bnb/awesome-hyper).
 
+* Screenshot do meu terminal
 ![terminal](/terminal.PNG)
 
 Alguns links que me ajudaram também foi:
