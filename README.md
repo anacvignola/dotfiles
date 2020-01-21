@@ -24,4 +24,4 @@ Alguns links que me ajudaram também foi:
 * [Oh my git](https://github.com/arialdomartini/oh-my-git)
 * [My git bash](https://github.com/xnng/my-git-bash)
 
-OBS: Se seu terminal tiver muito lento e deixando partes em branco quando você roda algum comando tipo para clonar um repositório ou add um plugin em uma aplicação, atualize seu Windows 10 e tente mantê-lo atualizado.
+OBS: Se seu terminal tiver muito lento e deixando partes em branco quando você roda algum comando tipo para clonar um repositório ou adiciona um plugin em uma aplicação, atualize seu Windows 10, isso irá corrigir e tente mantê-lo atualizado.
