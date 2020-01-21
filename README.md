@@ -23,3 +23,5 @@ Alguns links que me ajudaram também foi:
 * [How To Customize The Git For Windows Bash Shell Prompt](https://alanbarber.com/post/how-to-customize-the-git-for-windows-bash-shell-prompt/)
 * [Oh my git](https://github.com/arialdomartini/oh-my-git)
 * [My git bash](https://github.com/xnng/my-git-bash)
+
+OBS: Se seu terminal tiver muito lento e deixando partes em branco quando você roda algum comando tipo para clonar um repositório ou add um plugin em uma aplicação, atualize seu Windows 10 e tente mantê-lo atualizado.
