@@ -1,7 +1,5 @@
 # dotfiles
 
-![terminal](/terminal.PNG)
-
 Depois que mudei do Linux(Debian) para o Windows 10, foi dificil achar um terminal bom e bonito, depois de muita pesquisa consegui editar as configurações do Git Bash e [Hyper](https://hyper.is/) e ficou quase perfeito(funciona até os comandos do linux, mas faltou a performance do teriminal do Linux em alguns comandos na minha opnião),  hoje utilizo o Hyper juntamente com o Git Bash.
 
 Para utilizar :
@@ -18,6 +16,8 @@ Para utilizar :
     em "C:\Users\SEUUSUÁRIO\AppData\Roaming\Hyper".
 
 Eu utilizei o tema [Dracula](https://draculatheme.com/) e mais alguns plugins, você pode escolher o que preferir nesta lista que me ajudou muito [Awesome Hyper](https://github.com/bnb/awesome-hyper).
+
+![terminal](/terminal.PNG)
 
 Alguns links que me ajudaram também foi:
 
