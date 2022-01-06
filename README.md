@@ -4,87 +4,99 @@ Como eu adoro formatar o pc e mudo várias vezes de sistema operacional, decidi 
 
 ## Como utilizar :
 
-```bash
-    ### No Windows
+  ### No Windows:
 
-    instalar o gerenciador de pacotes [Chocolatey](https://chocolatey.org/)
+  instalar o gerenciador de pacotes [Chocolatey](https://chocolatey.org/)
 
-    ### clone o repositório
+  ```bash
 
-        $ git clone https://github.com/anacvignola/dotfiles/
+  ### clone o repositório
 
-    ### instale os pacotes
+      $ git clone https://github.com/anacvignola/dotfiles/
 
-        $ cd dotfiles
+  ### instale os pacotes
 
-        $ choco install packages.config -y
+      $ cd dotfiles
 
-    configure o [WSL](https://docs.microsoft.com/pt-br/windows/wsl/install) e instale o ubuntu
+      $ choco install packages.config -y
 
-    ### instale as extensões do vscode com o comando abaixo
+  ```
 
-        $ code --install-extension clinyong.vscode-css-modules
-        $ code --install-extension CoenraadS.bracket-pair-colorizer
-        $ code --install-extension Dart-Code.dart-code
-        $ code --install-extension Dart-Code.flutter
-        $ code --install-extension dbaeumer.vscode-eslint
-        $ code --install-extension donjayamanne.githistory
-        $ code --install-extension EditorConfig.EditorConfig
-        $ code --install-extension esbenp.prettier-vscode
-        $ code --install-extension formulahendry.auto-close-tag
-        $ code --install-extension formulahendry.auto-rename-tag
-        $ code --install-extension formulahendry.code-runner
-        $ code --install-extension ms-vscode-remote.remote-wsl
-        $ code --install-extension ms-vsliveshare.vsliveshare
-        $ code --install-extension naumovs.color-highlight
-        $ code --install-extension octref.vetur
-        $ code --install-extension PKief.material-icon-theme
-        $ code --install-extension ritwickdey.LiveServer
-        $ code --install-extension rocketseat.rocketseatreactjs
-        $ code --install-extension rocketseat.rocketseatreactnative
-        $ code --install-extension rocketseat.theme-omni
-        $ code --install-extension styled-components.vscode-styled-components
-        $ code --install-extension WakaTime.vscode-wakatime
+  configure o [WSL](https://docs.microsoft.com/pt-br/windows/wsl/install) e instale o ubuntu
 
-    ### substituir settings.json do vscode, .hyper do Hyper Terminal
+  ```bash
 
-    ### acessar PowerShell em modo admnistrador e:
+  ### instale as extensões do vscode com o comando abaixo
 
-        $ code $PROFILE
+      $ code --install-extension clinyong.vscode-css-modules
+      $ code --install-extension CoenraadS.bracket-pair-colorizer
+      $ code --install-extension Dart-Code.dart-code
+      $ code --install-extension Dart-Code.flutter
+      $ code --install-extension dbaeumer.vscode-eslint
+      $ code --install-extension donjayamanne.githistory
+      $ code --install-extension EditorConfig.EditorConfig
+      $ code --install-extension esbenp.prettier-vscode
+      $ code --install-extension formulahendry.auto-close-tag
+      $ code --install-extension formulahendry.auto-rename-tag
+      $ code --install-extension formulahendry.code-runner
+      $ code --install-extension ms-vscode-remote.remote-wsl
+      $ code --install-extension ms-vsliveshare.vsliveshare
+      $ code --install-extension naumovs.color-highlight
+      $ code --install-extension octref.vetur
+      $ code --install-extension PKief.material-icon-theme
+      $ code --install-extension ritwickdey.LiveServer
+      $ code --install-extension rocketseat.rocketseatreactjs
+      $ code --install-extension rocketseat.rocketseatreactnative
+      $ code --install-extension rocketseat.theme-omni
+      $ code --install-extension styled-components.vscode-styled-components
+      $ code --install-extension WakaTime.vscode-wakatime
 
-    ### e cole:
+  ### substituir settings.json do vscode, .hyper do Hyper Terminal
 
-        Import-Module oh-my-posh
-        Set-PoshPrompt -Theme agnoster
-        Enable-PoshTooltips
+  ### acessar PowerShell em modo admnistrador e:
 
-    ### e só salvar.
+      $ code $PROFILE
 
-    ### No Ubuntu
+  ### e cole:
 
-        $ sudo apt-get install git zsh
+      Import-Module oh-my-posh
+      Set-PoshPrompt -Theme agnoster
+      Enable-PoshTooltips
 
-    também instale [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) e [NVM](https://github.com/nvm-sh/nvm)
+  ### e só salvar.
+  
+```
 
-    ### instale o node no ubuntu
+  ### No Ubuntu:
+  
+  ```bash
 
-        $ nvm install --lts
+      $ sudo apt-get install git zsh
 
-    ### clone novamente o dotfiles no ubuntu e crie links simbólicos
+  ```
+  também instale [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) e [NVM](https://github.com/nvm-sh/nvm)
 
-        $ git clone https://github.com/anacvignola/dotfiles/
+  ```bash
 
-        $ ln -s ~/.dotfiles/.bashrc ~/.bashrc
-        $ ln -s ~/.dotfiles/.zshrc ~/.zshrc
-        $ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+  ### instale o node no ubuntu
 
-    ### após a instalação
+      $ nvm install --lts
 
-      $ flutter doctor --android-licenses
+  ### clone novamente o dotfiles no ubuntu e crie links simbólicos
+
+      $ git clone https://github.com/anacvignola/dotfiles/
+
+      $ ln -s ~/.dotfiles/.bashrc ~/.bashrc
+      $ ln -s ~/.dotfiles/.zshrc ~/.zshrc
+      $ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+
+  ### após a instalação
+
+    $ flutter doctor --android-licenses
 
 ```
 
-Eu utilizo o tema [Omni](https://github.com/getomni) em praticamente tudo, e a fonte que utilizo [JetBrains Mono](https://www.jetbrains.com/lp/mono).
+Eu utilizo o tema [Omni](https://github.com/getomni) mas também gosto muito do [Dracula](https://draculatheme.com/) em praticamente tudo, e a fonte que utilizo é [JetBrains Mono](https://www.jetbrains.com/lp/mono) mas utilizei muito a [Fira Code](https://github.com/tonsky/FiraCode).
 
 ### Alguns links:
 
@@ -92,3 +104,4 @@ Eu utilizo o tema [Omni](https://github.com/getomni) em praticamente tudo, e a f
 - [Oh my posh](https://ohmyposh.dev/)
 - [Tutorial configuração emulador](https://react-native.rocketseat.dev/)
 - [Tutorial Terminal Oh my zsh](https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/)
+```
