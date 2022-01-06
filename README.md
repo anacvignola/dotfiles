@@ -1,33 +1,95 @@
-# :computer: :gear: dotfiles 
+# :computer: :gear: dotfiles
 
-Depois que mudei do Linux(Debian) para o Windows 10, foi dificil achar um terminal bom e bonito sem ter que utilizar um subsistema no windows ou fazer dualboot, depois de muita pesquisa consegui editar as configurações do Git Bash e [Hyper](https://hyper.is/), ficou quase perfeito(funciona até os comandos do linux, mas faltou a performance do teriminal do Linux em alguns comandos na minha opnião),  hoje utilizo o Hyper juntamente com o Git Bash.
+Como eu adoro formatar o pc e mudo várias vezes de sistema operacional, decidi automatizar alguns processos ao menos para o windows. No momento estou utilizando o Windows 10 com [WSL](https://docs.microsoft.com/pt-br/windows/wsl/install) e nele sempre utilizo o gerenciador de pacotes [Chocolatey](https://chocolatey.org/).
 
-Para utilizar :
+## Como utilizar :
 
-    clone o repositório 
-   
+```bash
+    ## No Windows
+
+    ### instalar o gerenciador de pacotes [Chocolatey](https://chocolatey.org/)
+
+    ### clone o repositório
+
     git clone https://github.com/anacvignola/dotfiles/
-    
-    Navegue até a pasta e copie o arquivo "git-prompt.sh"
-    para a pasta "C:\Program Files\Git\etc\profile.d\" e substitua o arquivo.
-    Ou você pode editar com um editor de texto como bem entender, mas tome cuidado.
-    
-    Altere as configurações do Hyper da forma que você achar melhor,
-    ou você pode copiar as minhas é só jogar o arquivo ".hyper" 
-    em "C:\Users\SEUUSUÁRIO\AppData\Roaming\Hyper". 
-    Ou abra o terminar Hyper vá no menu > Edit > Preferences...
 
-Eu utilizei o tema [Dracula](https://draculatheme.com/), a fonte [FiraCode](https://github.com/tonsky/FiraCode) e mais alguns plugins, você pode escolher o que preferir nesta lista que me ajudou muito [Awesome Hyper](https://github.com/bnb/awesome-hyper).
+    ### instale os pacotes
 
- :camera: Screenshot do meu terminal
+    cd dotfiles
 
-![terminal](/terminal.PNG)
+    choco install packages.config -y
 
-Alguns links que me ajudaram também foi:
+    ### configure o [WSL](https://docs.microsoft.com/pt-br/windows/wsl/install) e instale o ubuntu
 
-* [Configuring Hyper Terminal in Windows](https://dev.to/droidmakk/configuring-hyper-terminal-in-windows-3j15)
-* [How To Customize The Git For Windows Bash Shell Prompt](https://alanbarber.com/post/how-to-customize-the-git-for-windows-bash-shell-prompt/)
-* [Oh my git](https://github.com/arialdomartini/oh-my-git)
-* [My git bash](https://github.com/xnng/my-git-bash)
+    ### instale as extensões do vscode com o comando abaixo
 
-OBS: Se seu terminal tiver muito lento e deixando partes em branco quando você roda algum comando tipo para clonar um repositório ou adiciona um plugin em uma aplicação, atualize seu Windows 10, isso irá corrigir e tente mantê-lo atualizado.
+    code --install-extension clinyong.vscode-css-modules
+    code --install-extension CoenraadS.bracket-pair-colorizer
+    code --install-extension Dart-Code.dart-code
+    code --install-extension Dart-Code.flutter
+    code --install-extension dbaeumer.vscode-eslint
+    code --install-extension donjayamanne.githistory
+    code --install-extension EditorConfig.EditorConfig
+    code --install-extension esbenp.prettier-vscode
+    code --install-extension formulahendry.auto-close-tag
+    code --install-extension formulahendry.auto-rename-tag
+    code --install-extension formulahendry.code-runner
+    code --install-extension ms-vscode-remote.remote-wsl
+    code --install-extension ms-vsliveshare.vsliveshare
+    code --install-extension naumovs.color-highlight
+    code --install-extension octref.vetur
+    code --install-extension PKief.material-icon-theme
+    code --install-extension ritwickdey.LiveServer
+    code --install-extension rocketseat.rocketseatreactjs
+    code --install-extension rocketseat.rocketseatreactnative
+    code --install-extension rocketseat.theme-omni
+    code --install-extension styled-components.vscode-styled-components
+    code --install-extension WakaTime.vscode-wakatime
+
+    ### substituir settings.json do vscode, .hyper do Hyper Terminal
+
+    ### acessar PowerShell em modo admnistrador e:
+
+        code $PROFILE
+
+        e colar:
+
+        Import-Module oh-my-posh
+        Set-PoshPrompt -Theme agnoster
+        Enable-PoshTooltips
+
+        e salvar.
+
+    ## No Ubuntu
+
+        sudo apt-get install git zsh
+
+    ### também instale [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) e [NVM](https://github.com/nvm-sh/nvm)
+
+    ### instale o node no ubuntu
+
+        nvm install --lts
+
+    ### clone novamente o dotfiles no ubuntu e crie links simbolicos
+
+        git clone https://github.com/anacvignola/dotfiles/
+
+
+    ln -s ~/.dotfiles/.bashrc ~/.bashrc
+    ln -s ~/.dotfiles/.zshrc ~/.zshrc
+    ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+
+    ## Após a instalação
+
+    flutter doctor --android-licenses
+
+```
+
+Eu utilizo o tema [Omni](https://github.com/getomni) em praticamente tudo, e a fonte que utilizo [JetBrains Mono](https://www.jetbrains.com/lp/mono).
+
+### Alguns links:
+
+- [Awesome Hyper](https://github.com/bnb/awesome-hyper)
+- [Oh my posh](https://ohmyposh.dev/)
+- [Tutorial configuração emulador](https://react-native.rocketseat.dev/)
+- [Tutorial Terminal Oh my zsh](https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/)
