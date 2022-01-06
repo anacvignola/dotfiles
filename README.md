@@ -5,83 +5,82 @@ Como eu adoro formatar o pc e mudo várias vezes de sistema operacional, decidi 
 ## Como utilizar :
 
 ```bash
-    ## No Windows
+    ### No Windows
 
-    ### instalar o gerenciador de pacotes [Chocolatey](https://chocolatey.org/)
+    instalar o gerenciador de pacotes [Chocolatey](https://chocolatey.org/)
 
     ### clone o repositório
 
-    git clone https://github.com/anacvignola/dotfiles/
+        $ git clone https://github.com/anacvignola/dotfiles/
 
     ### instale os pacotes
 
-    cd dotfiles
+        $ cd dotfiles
 
-    choco install packages.config -y
+        $ choco install packages.config -y
 
-    ### configure o [WSL](https://docs.microsoft.com/pt-br/windows/wsl/install) e instale o ubuntu
+    configure o [WSL](https://docs.microsoft.com/pt-br/windows/wsl/install) e instale o ubuntu
 
     ### instale as extensões do vscode com o comando abaixo
 
-    code --install-extension clinyong.vscode-css-modules
-    code --install-extension CoenraadS.bracket-pair-colorizer
-    code --install-extension Dart-Code.dart-code
-    code --install-extension Dart-Code.flutter
-    code --install-extension dbaeumer.vscode-eslint
-    code --install-extension donjayamanne.githistory
-    code --install-extension EditorConfig.EditorConfig
-    code --install-extension esbenp.prettier-vscode
-    code --install-extension formulahendry.auto-close-tag
-    code --install-extension formulahendry.auto-rename-tag
-    code --install-extension formulahendry.code-runner
-    code --install-extension ms-vscode-remote.remote-wsl
-    code --install-extension ms-vsliveshare.vsliveshare
-    code --install-extension naumovs.color-highlight
-    code --install-extension octref.vetur
-    code --install-extension PKief.material-icon-theme
-    code --install-extension ritwickdey.LiveServer
-    code --install-extension rocketseat.rocketseatreactjs
-    code --install-extension rocketseat.rocketseatreactnative
-    code --install-extension rocketseat.theme-omni
-    code --install-extension styled-components.vscode-styled-components
-    code --install-extension WakaTime.vscode-wakatime
+        $ code --install-extension clinyong.vscode-css-modules
+        $ code --install-extension CoenraadS.bracket-pair-colorizer
+        $ code --install-extension Dart-Code.dart-code
+        $ code --install-extension Dart-Code.flutter
+        $ code --install-extension dbaeumer.vscode-eslint
+        $ code --install-extension donjayamanne.githistory
+        $ code --install-extension EditorConfig.EditorConfig
+        $ code --install-extension esbenp.prettier-vscode
+        $ code --install-extension formulahendry.auto-close-tag
+        $ code --install-extension formulahendry.auto-rename-tag
+        $ code --install-extension formulahendry.code-runner
+        $ code --install-extension ms-vscode-remote.remote-wsl
+        $ code --install-extension ms-vsliveshare.vsliveshare
+        $ code --install-extension naumovs.color-highlight
+        $ code --install-extension octref.vetur
+        $ code --install-extension PKief.material-icon-theme
+        $ code --install-extension ritwickdey.LiveServer
+        $ code --install-extension rocketseat.rocketseatreactjs
+        $ code --install-extension rocketseat.rocketseatreactnative
+        $ code --install-extension rocketseat.theme-omni
+        $ code --install-extension styled-components.vscode-styled-components
+        $ code --install-extension WakaTime.vscode-wakatime
 
     ### substituir settings.json do vscode, .hyper do Hyper Terminal
 
     ### acessar PowerShell em modo admnistrador e:
 
-        code $PROFILE
+        $ code $PROFILE
 
-        e colar:
+    ### e cole:
 
         Import-Module oh-my-posh
         Set-PoshPrompt -Theme agnoster
         Enable-PoshTooltips
 
-        e salvar.
+    ### e só salvar.
 
-    ## No Ubuntu
+    ### No Ubuntu
 
-        sudo apt-get install git zsh
+        $ sudo apt-get install git zsh
 
-    ### também instale [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) e [NVM](https://github.com/nvm-sh/nvm)
+    também instale [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) e [NVM](https://github.com/nvm-sh/nvm)
 
     ### instale o node no ubuntu
 
-        nvm install --lts
+        $ nvm install --lts
 
-    ### clone novamente o dotfiles no ubuntu e crie links simbolicos
+    ### clone novamente o dotfiles no ubuntu e crie links simbólicos
 
-        git clone https://github.com/anacvignola/dotfiles/
+        $ git clone https://github.com/anacvignola/dotfiles/
 
+        $ ln -s ~/.dotfiles/.bashrc ~/.bashrc
+        $ ln -s ~/.dotfiles/.zshrc ~/.zshrc
+        $ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 
-    ln -s ~/.dotfiles/.bashrc ~/.bashrc
-    ln -s ~/.dotfiles/.zshrc ~/.zshrc
-    ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+    ### após a instalação
 
-    ## Após a instalação
-
-    flutter doctor --android-licenses
+      $ flutter doctor --android-licenses
 
 ```
 
